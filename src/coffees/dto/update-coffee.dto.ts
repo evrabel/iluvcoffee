@@ -1,5 +1,6 @@
-export class UpdateCoffeeDto {
-  readonly name?: string;
-  readonly brand?: string;
-  readonly flavors?: string[];
-}
+import { PartialType } from '@nestjs/mapped-types';
+import { CreateCoffeeDto } from './create-coffee.dto';
+
+// PartialType marks all of the fields as optional, inherits the
+// validation decorators and adds the optional validation rule
+export class UpdateCoffeeDto extends PartialType(CreateCoffeeDto) {}
