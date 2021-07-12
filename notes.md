@@ -21,7 +21,7 @@ Downloaded and installed docker desktop
 Mac:
 https://hub.docker.com/editions/community/docker-ce-desktop-mac
 
-Windows: 
+Windows:
 See Docker Installation Instructions in OneNote
 
 Mac Docker start and stop commands:
@@ -32,17 +32,24 @@ docker-compose down
 
 Postgres user: postgres
 
-
 Verified that the pg package was approved: https://va529.cloud.invgate.net/incident/show/index/id/9913
 
 Postgres Installation on Work Laptop
 
 Ran Docker Desktop
 
-
-
 Following instructions here: https://hub.docker.com/_/postgres
 
 docker pull postgres
 
 docker run --name iluvcoffee -e POSTGRES_PASSWORD=pass123 -d postgres
+
+Installed pgAdmin on my Mac
+Installed it in Docker:
+docker pull dpage/pgadmin4
+
+Command to run it:
+
+docker run -p 80:80 -e 'PGADMIN_DEFAULT_EMAIL=evrabel@yahoo.com' -e 'PGADMIN_DEFAULT_PASSWORD=pass123' -d dpage/pgadmin4
+
+pgadmin URL: http://localhost:80
