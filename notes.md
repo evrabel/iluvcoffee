@@ -44,7 +44,16 @@ docker pull postgres
 
 docker run --name iluvcoffee -e POSTGRES_PASSWORD=pass123 -d postgres
 
-PGADMIN 
+Command to run docker on windows:
+docker run --name iluvcoffee -p 5432:5432 -e POSTGRES_PASSWORD=pass123 -d postgres
+
+docker start iluvcoffee
+
+docker stop iluvcoffee
+
+docker rm iluvcoffee
+
+PGADMIN
 Installed pgAdmin on my Mac
 Installed it in Docker:
 docker pull dpage/pgadmin4
@@ -56,13 +65,3 @@ docker run -p 80:80 -e 'PGADMIN_DEFAULT_EMAIL=evrabel@yahoo.com' -e 'PGADMIN_DEF
 pgadmin URL: http://localhost:80
 
 END PGADMIN
-
-
-Command to run docker on windows: 
-docker run --name iluvcoffee -p 5432:5432 -e POSTGRES_PASSWORD=pass123 -d postgres 
-
-docker start iluvcoffee
-
-docker stop iluvcoffee
-
-docker rm iluvcoffee
