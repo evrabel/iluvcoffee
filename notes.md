@@ -44,14 +44,20 @@ docker pull postgres
 
 docker run --name iluvcoffee -e POSTGRES_PASSWORD=pass123 -d postgres
 
-Command to run docker on windows:
+Command to create docker on windows:
 docker run --name iluvcoffee -p 5432:5432 -e POSTGRES_PASSWORD=pass123 -d postgres
 
+Command to start the db:
 docker start iluvcoffee
 
 docker stop iluvcoffee
 
 docker rm iluvcoffee
+
+NEST UPGRADE
+
+Command to update nest
+nest update -f -t latest
 
 PGADMIN
 Installed pgAdmin on my Mac
