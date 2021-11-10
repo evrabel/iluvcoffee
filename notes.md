@@ -54,11 +54,6 @@ docker stop iluvcoffee
 
 docker rm iluvcoffee
 
-NEST UPGRADE
-
-Command to update nest
-nest update -f -t latest
-
 PGADMIN
 Installed pgAdmin on my Mac
 Installed it in Docker:
