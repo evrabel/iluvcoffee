@@ -56,3 +56,10 @@ docker start iluvcoffee
 docker stop iluvcoffee
 
 docker rm iluvcoffee
+
+Jest Testing
+
+npm run test:watch -- coffees.service
+
+e2e Testing
+npm run test:e2e
