@@ -18,14 +18,14 @@ export class CoffeesService {
     @InjectRepository(Flavor)
     private readonly flavorRepository: Repository<Flavor>,
     private readonly connection: Connection,
-    private readonly configService: ConfigService,
   ) {
+    // private readonly configService: ConfigService,
     // const databaseHost = this.configService.get<string>(
     //   'database.host',
     //   'localhost',
     // );
-    const coffeesConfig = this.configService.get('coffees');
-    console.log(coffeesConfig);
+    // const coffeesConfig = this.configService.get('coffees');
+    // console.log(coffeesConfig);
   }
 
   findAll(paginationQuery: PaginationQueryDto) {

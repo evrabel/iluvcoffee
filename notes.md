@@ -24,25 +24,28 @@ https://hub.docker.com/editions/community/docker-ce-desktop-mac
 Windows:
 See Docker Installation Instructions in OneNote
 
-Mac Docker start and stop commands:
+Mac
+
+Docker start and stop commands:
 
 docker-compose up -d
+
+- This created a container but I do not see it listed in Docker Desktop. I could see it with the following command:
+  docker container ls
 
 docker-compose down
 
 Postgres user: postgres
 
-Verified that the pg package was approved: https://va529.cloud.invgate.net/incident/show/index/id/9913
-
 Postgres Installation on Work Laptop
+
+Verified that the pg package was approved: https://va529.cloud.invgate.net/incident/show/index/id/9913
 
 Ran Docker Desktop
 
 Following instructions here: https://hub.docker.com/_/postgres
 
 docker pull postgres
-
-docker run --name iluvcoffee -e POSTGRES_PASSWORD=pass123 -d postgres
 
 Command to create docker on windows:
 docker run --name iluvcoffee -p 5432:5432 -e POSTGRES_PASSWORD=pass123 -d postgres
@@ -53,16 +56,3 @@ docker start iluvcoffee
 docker stop iluvcoffee
 
 docker rm iluvcoffee
-
-PGADMIN
-Installed pgAdmin on my Mac
-Installed it in Docker:
-docker pull dpage/pgadmin4
-
-Command to run it:
-
-docker run -p 80:80 -e 'PGADMIN_DEFAULT_EMAIL=evrabel@yahoo.com' -e 'PGADMIN_DEFAULT_PASSWORD=pass123' -d dpage/pgadmin4
-
-pgadmin URL: http://localhost:80
-
-END PGADMIN
