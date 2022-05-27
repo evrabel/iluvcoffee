@@ -1,4 +1,4 @@
-import { CoffeesService } from 'src/coffees/coffees.service';
+import { CoffeesService } from '../coffees/coffees.service';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()

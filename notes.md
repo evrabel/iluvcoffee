@@ -63,3 +63,4 @@ npm run test:watch -- coffees.service
 
 e2e Testing
 npm run test:e2e
+npm run test:e2e -- coffees
